@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Customer;
-import com.example.demo.service.StudentService;
+import com.example.demo.service.CustomerService;
 
 @RestController
 public class StudentController {
 	
 	@Autowired
-	StudentService stuSer;
+	CustomerService stuSer;
 	
 	@PostMapping("/stpeters/college/student/add")
 	public String addNewStudent(@RequestBody Customer stuData){
